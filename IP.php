@@ -118,7 +118,7 @@ function googleTranslateElementInit() {
 			</div>  
 			<div id="Bofore_Content" style="border-style: solid; border-width: 1px; padding-left: 1px; 
 			padding-right: 1px; padding-top: 1px; padding-bottom: 1px">
-							<p align="center"><b><font color ="#FFF8D2"><br> faleritics
+							<p align="center"><b><font color ="#FFF8D2"><br> Web Technology/Marketing
 				</font></b></p></div>
 				<div id="section" style="border-style: solid; border-width: 1px; padding-left: 1px; 
 				padding-right: 1px; padding-top: 1px; padding-bottom: 1px">
