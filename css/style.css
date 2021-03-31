@@ -1,0 +1,99 @@
+#header{
+	background-color : #C2D3FF;  <!-- background color -->
+	border:1px solid red; 
+        width:1000px;
+        height:100px;
+        color:black;              <!-- text blue -->
+	text-align:center;
+	margin-left: 40px;
+	margin-right:40px;
+	}
+		#horizontal_menu{
+	background-color : #A5CCA7;  <!-- background color -->
+	border:1px solid red;
+        width:1000px;
+        height:100px;
+        color:black;              <!-- text blue -->
+	text-align:center;
+	margin-left: 40px;
+	margin-right:40px;
+	}
+	#side_bar_1
+	{
+		background-color : #A5CCA7;  <!-- background color -->
+	    border:1px solid red; 
+        width:200px;
+        height:800px;
+        color:black;              <!-- text blue -->
+	text-align:center;
+	float:left;
+	margin-top:  -1px;
+	margin-left: 40px;
+	}
+		#Bofore_Content
+	{
+		background-color : #A5CCA7;  <!-- background color -->
+	    border:1px solid red; 
+        width:599px;
+        height:100px;
+        color:black;              <!-- text blue -->
+	text-align:center;
+	margin-left: 240px;
+	margin-top:  -1px;
+	float:center;
+	}	
+	li.s {
+display: inline;
+		
+
+}
+
+	#section{
+        background-color : #A5CCA7;    <!-- background color -->
+	border:1px solid red; 
+	width:599px;
+    height:600px;
+ 	color:black;             <!-- color text -->
+	float:center;
+	margin-left: 240px;
+	margin-right:139px;
+	}  
+		#side_bar_2
+	{
+		background-color : #74E8DD;  <!-- background color -->
+	    border:1px solid red; 
+        width:200px;
+        height:800px;
+        color:black;              <!-- text blue -->
+	text-align:center
+	float:right;
+	margin-left: 840px;
+	margin-top:  -811px;
+	margin-right:39px;
+	}
+			#After_Content
+	{
+		background-color : #A5CCA7;  <!-- background color -->
+	    border:1px solid red; 
+        width:599px;
+        height:100px;
+        color:black;              <!-- text blue -->
+	text-align:center;
+	margin-left: 240px;
+	float:center;
+	}
+		#footer{
+	background-color : #C2D3FF;  <!-- background color -->
+	border:1px solid red; 
+        width:1000px;
+        height:100px;
+        color:black;              <!-- text blue -->
+	text-align:center;
+	margin-left: 40px;
+	margin-right:40px;
+	}
+	body
+    {
+        font-family: 'Alegreya SC';
+		background-color : #C2D3FF;
+    }
