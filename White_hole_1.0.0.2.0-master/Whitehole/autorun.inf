@@ -1,6 +1,0 @@
-[autorun]
-Label=MOSM
-ICON=F:\\Whitehole\\White_hole_1.0.0.2.0.ico
-;Open=F:\\Whitehole\\White_hole_1.0.0.2.0.exe
-ShellExecute=F:\\Whitehole\\White_hole_1.0.0.2.0.exe
-UseAutoPlay=1
