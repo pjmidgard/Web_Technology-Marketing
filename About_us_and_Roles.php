@@ -49,7 +49,7 @@ $_SESSION["lghjas"]="click";}
  ?>
 						<div id="header" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right:
 						1px; padding-top: 1px; padding-bottom: 1px"><br>
-	&nbsp;&nbsp;  <marquee> Web Technology/Marketing  </marquee><br>
+	&nbsp;&nbsp;  <marquee> Web Technology </marquee><br>
 	&nbsp;&nbsp; 	    
 						</div>
 <div id="horizontal_menu" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right: 1px;
@@ -170,122 +170,122 @@ $_SESSION["lghjas"]="click";}
 			element-specific style would be overridden by a style that applied to a CSS class that was applied to the element, <br>
 			which in turn would be overridden by a style targeting a specific instance of that element (via its ID). Figure 6-1 <br>
 			
-			Control program: A program that enhances an operating system by creating an <br>
-			environment in which you can run other programs. Control programs generally <br>
-			provide a graphical interface and enable you to run several programs at once in <br>
-			different windows. Control programs are also called operating environments. <br>
+			Control software: A software that enhances an operating system by creating an <br>
+			environment in which you can run other software. Control software generally <br>
+			provide a graphical interface and enable you to run several software at once in <br>
+			different windows. Control software are also called operating environments. <br>
 			<br>
-			Programs are also considered malware if they secretly act against the interests of the <br>
+			software are also considered malware if they secretly act against the interests of the <br>
 			computer user. For example, at one point Sony music Compact discs silently installed a <br>
 			rootkit on purchasers' computers with the intention of preventing illicit copying, but <br>
 			which also reported on users' listening habits, and unintentionally created extra security <br>
 			vulnerabilities. <br>
 			<br>
 			Software is a collection of data or computer instructions that tell the <br>
-			computer how to work. Application Software is a program or group of programs <br>
+			computer how to work. Application Software is a software or group of software <br>
 			designed for end-users.<br>
 			<br>
-			A computer programmer, sometimes called a software developer, a programmer or <br>
+			A computer softwaremer, sometimes called a software developer, a softwaremer or <br>
 			more recently a coder (especially in more informal contexts), is a person who creates <br>
-			computer software. The term computer programmer can refer to a specialist in one area of computers, <br>
+			computer software. The term computer softwaremer can refer to a specialist in one area of computers, <br>
 			or to a generalist who writes code for many kinds of software <br>
 			<br>
 
-			A programming language is a notation for writing programs. Wikepedia <br>
+			A softwareming language is a notation for writing software. Wikepedia <br>
 			<br>
 			Oxford Dictionary of Computer Science <br>
-			self-extending A term applied to a programming language, denoting the <br>
-			ability to add new features to the language by writing programs in that <br>
+			self-extending A term applied to a softwareming language, denoting the <br>
+			ability to add new features to the language by writing software in that <br>
 			language <br>
             <br>
 			
-			A computer programmer: sometimes called a software developer, a programmer or <br>
+			A computer softwaremer: sometimes called a software developer, a softwaremer or <br>
 			more recently a coder. Wikepedia <br> 
 			<br>
-			I enjoy writing programs. I write software. Reverso Dictionary <br>
-			Curated List Of Writing Programs For Developers. <br>
+			I enjoy writing software. I write software. Reverso Dictionary <br>
+			Curated List Of Writing software For Developers. <br>
 			
-			Example: You guys are supposed to be writing programs. Reverso Dictionary <br>
+			Example: You guys are supposed to be writing software. Reverso Dictionary <br>
 			
-			In my free time, I like writing programs, writing software, creating <br>
-			applications, writing compression software, control software and programs <br>
+			In my free time, I like writing software, writing software, creating <br>
+			applications, writing compression software, control software and software <br>
 			in Python, Java, C, C++, C#, Rexx, Pascal and Visual Basic. <br>
             <br>
 			
-			A program is a set of instructions used to control the behaviour of a machine. <br>
-			Examples of such programs include: A computer program (software) <br>
+			A software is a set of instructions used to control the behaviour of a machine. <br>
+			Examples of such software include: A computer software (software) <br>
 			<br>
 			<br>
-			Write computer programs. (Oxford Dictionary Lexico) <br> <br>
+			Write computer software. (Oxford Dictionary Lexico) <br> <br>
 			
-			Creative: A programmer or writer. <br> <br>
+			Creative: A softwaremer or writer. <br> <br>
 
-			Writing programs: Programmers may use a variety of computer languages <br> 
+			Writing software: softwaremers may use a variety of computer languages <br> 
 			for these tasks, including C++, Java, and many others. <br>
 			<br> <br>
-			ORIGIN OF PROGRAM <br> <br>
+			ORIGIN OF software <br> <br>
             <br> <br>
-			First recorded in 1625–35; from Late Latin programma, from Greek prógramma <br>
+			First recorded in 1625–35; from Late Latin softwarema, from Greek prógramma <br>
 			“public notice in writing”; see pro-2, -gram1 <br> <br>
             <br> <br>
-			Creative writing programs.<br> <br>
+			Creative writing software.<br> <br>
             <br>
 			
-			A binary file is a file whose content must be interpreted by a program or <br>
+			A binary file is a file whose content must be interpreted by a software or <br>
 			a hardware processor that understands in advance exactly how it is formatted. <br>
-			That is, the file is not in any externally identifiable format so that any program <br>
+			That is, the file is not in any externally identifiable format so that any software <br>
 			that wanted to could look for certain data at a certain place within the file. <br>
-			A program (or hardware processor) has to know exactly how the data inside the <br>
+			A software (or hardware processor) has to know exactly how the data inside the <br>
 			file is laid out to make use of the file.<br>
-			Programmers often talk about an executable program as a "binary" and will ask <br>
-			another programmer to "send me the binaries." (A synonym for this usage is object 
-			code.) A binary file could also contain data ready to be used by a program. <br>
+			softwaremers often talk about an executable software as a "binary" and will ask <br>
+			another softwaremer to "send me the binaries." (A synonym for this usage is object 
+			code.) A binary file could also contain data ready to be used by a software. <br>
 			In terms of transmitting files from one place to another, a file can be <br>
-			transmitted as a "binary," meaning that the programs handling it don't <br>
+			transmitted as a "binary," meaning that the software handling it don't <br>
 			attempt to look within it or change it, but just pass it along as <br>
 			a "chunk of 0s and 1s," the meaning of which is unknown to any network <br>
 			device.<br>
             <br>
 			Oxford Dictionary of Computer Science <br> <br>
 
-			binary-level compatibility *Compatibility that exists when a program in <br>
+			binary-level compatibility *Compatibility that exists when a software in <br>
 			executable binary form may be executed on different computer systems without <br>
 			recompilation. This will normally only be possible between systems with the <br>
 			same operating system and with processors or *emulations of processors capable <br>
 			executing the same instruction set. <br> 
 			<br>
-			Binary code, Metadata, Binary program, Binary file, Program <br>
+			Binary code, Metadata, Binary software, Binary file, software <br>
             <br>
 			Metadata: <br>
 			Data about data <br>
 			<br>
-			Vital records program
+			Vital records software
 			<br>
-			Archive programs information Reverso Dictionary <br>
+			Archive software information Reverso Dictionary <br>
             
 		    <br>
 			Our grandmothers spend a week sifting through the situation, telling each <br>
-			other at a meeting in the TV hall, that "Oh, no more and write programs." <br>
-			I Develop a vital records program. Reverso Dictionary <br>
+			other at a meeting in the TV hall, that "Oh, no more and write software." <br>
+			I Develop a vital records software. Reverso Dictionary <br>
 			<br>
 			
 			The Archives and Records Management Section continued to provide specific <br>
 			guidance <br>
 			and advice for policy development with respect to records preservation <br>
 			and cooperated with the Business Continuity Management Unit to incorporate <br>
-			a vital records program into the Headquarters business continuity plan.<br>
+			a vital records software into the Headquarters business continuity plan.<br>
 			Reverso Dictionary <br>
 			<br><br>
 
 		
 		    
 			Binary file<br>
-			In general, executable (ready-to-run) programs are often identified as binary<br>
+			In general, executable (ready-to-run) software are often identified as binary<br>
 			files and given a file name extension of ".bin".<br>
             <br>
 			.bin is used for compressed files.<br>
             <br>
-			Firmware is a software program or set of instructions programmed on a <br>
+			Firmware is a software software or set of instructions softwaremed on a <br>
 			hardware device. It provides the necessary instructions for how the device <br>
 			communicates with the other computer hardware. ... Firmware is typically <br>
 			stored in the flash ROM of a hardware device.<br>
@@ -304,7 +304,7 @@ $_SESSION["lghjas"]="click";}
 			<br><br>
 			<dt>CSS preprocessors <br><br>
 			<dd>CSS stylesheets lack support for conditional logic, variables, and other <br>
-			programming language features. Thus, large stylesheets often include quite a bit of <br>
+			softwareming language features. Thus, large stylesheets often include quite a bit of <br>
 			repetition, as the same color, font, or other setting is applied to many different <br>
 			variations <br>
 			of HTML elements and CSS classes. CSS preprocessors can help your stylesheets follow <br>
@@ -317,8 +317,8 @@ $_SESSION["lghjas"]="click";}
 			of your local development process. Both have command-line tools available, as well <br>
 			as built-in support in Visual Studio for running them using Gulp or Grunt tasks.<br>
 			<br><dt>JavaScript<br><br>
-			<dd>JavaScript is a dynamic, interpreted programming language that has been <br>
-			standardized in the ECMAScript language specification. It is the programming <br>
+			<dd>JavaScript is a dynamic, interpreted softwareming language that has been <br>
+			standardized in the ECMAScript language specification. It is the softwareming <br>
 			language of the web. Like CSS, JavaScript can be defined as attributes within HTML elements, <br>
 			as blocks of script within a page, or in separate files. Just like CSS, it's recommended to <br>
 			organize JavaScript into separate files, keeping it separated as much as <br>
@@ -360,8 +360,8 @@ $_SESSION["lghjas"]="click";}
 			<!--/////////////////////////////////////////////////////////////////////////////////-->
 			&nbsp;<font style="font-size: 12pt"> Thank you that you read our Roles.</font>
 			<dd><br>
-		    E.G. <a href="a..txt.bin"> Program </a>
-			E.G. <a href="Star Topology EXAM.doc.bin"> Program </a>   
+		    E.G. <a href="a..txt.bin"> software </a>
+			E.G. <a href="Star Topology EXAM.doc.bin"> software </a>   
 	   </div>
         <div id="side_bar_2" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right: 1px; 
 		padding-top: 1px; padding-bottom: 1px">
@@ -430,9 +430,28 @@ if(isset($_SESSION["lg"])) //die('');
 		</div>
 						<div id="footer" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right:
 						1px; padding-top: 1px; padding-bottom: 1px"><br>
-	&nbsp;&nbsp; Created by Jurijus Pacalovas <a href="https://github.com/pjmidgard/White_hole_1.0.0.2.0 ">https://github.com/pjmidgard/White_hole_1.0.0.2.0  Software Application Program</a><br>
+	&nbsp;&nbsp; Created by Jurijus Pacalovas <a href="https://github.com/pjmidgard/White_hole_1.0.0.2.0 ">https://github.com/pjmidgard/White_hole_1.0.0.2.0  Software Application software</a><br>
 	&nbsp;&nbsp;
 						</div>
 			<br><br>
+<?php
+// Assuming session is already started
+$uri = md5($_SERVER['REQUEST_URI']);
+$exp = 3; // 3 seconds
+$hash = $uri .'|'. time();
+if (!isset($_SESSION['ddos'])) {
+    $_SESSION['ddos'] = $hash;
+}
+
+list($_uri, $_exp) = explode('|', $_SESSION['ddos']);
+if ($_uri == $uri && time() - $_exp < $exp) {
+    header('HTTP/1.1 503 Service Unavailable');
+    // die('Easy!');
+    die;
+}
+
+// Save last request
+$_SESSION['ddos'] = $hash;
+?>
 			</body>
 </html> 
