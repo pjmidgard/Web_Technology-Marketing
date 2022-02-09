@@ -40,45 +40,54 @@ $result9 = substr($actual_link2, 0, $result9);
 if($result1=="http://www.faleristics4eforever.epizy.com/IP.php/")
 {
 echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/">';
+$x=1;
 }
 if($result3=="http://www.faleristics4eforever.epizy.com/index.php/")
 {
 echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/">';
+$x=1;
 }
 
 if($result2=="http://www.faleristics4eforever.epizy.com/index.php/index.php/")
 {
 echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/">';
+$x=1;
 }
 
 if($result4=="http://www.faleristics4eforever.epizy.com/About_us_and_Roles.php/")
 {
 echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/">';
+$x=1;
 }
 
 if($result5=="http://www.faleristics4eforever.epizy.com/Gallery.php/")
 {
 echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/">';
+$x=1;
 }
 
 if($result6=="http://www.faleristics4eforever.epizy.com/Gallery2.php/")
 {
 echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/">';
+$x=1;
 }
 
 if($result7=="http://www.faleristics4eforever.epizy.com/Manageusers.php/")
 {
 echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/">';
+$x=1;
 }
 
 if($result8=="http://www.faleristics4eforever.epizy.com/comments.php/")
 {
 echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/">';
+$x=1;
 }
 
 if($result9=="http://www.faleristics4eforever.epizy.com/Register.php/")
 {
 echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/">';
+$x=1;
 }
 $filename = 'epiz_25638021_Cluster.sql';
 // MySQL host
@@ -133,7 +142,7 @@ $sql4 = "insert into Product (Adminid,img1,img2,img3,Name_of_Product,password,Pr
 values('20098990','$varN8','$varN4','$varN5','ORIGINAL USSR MEDAL 1945 FOR THE VICTORY OVER  GERMANY','$2y$50$EIpeM1eAONuEg8KHMR3yY.vQhkFTRztOlACM4QEtDX6bJh8bEl0Da','Euro 45.00')";
 	
 	}
-$x=0;
+
 $conn = mysqli_connect($mysql_host,$mysql_username,$mysql_password,$mysql_database);
   $error = array('message1' =>'Table created successfuly' , 'message2'=>'Problem creating the table');
   if($conn == true)
@@ -141,22 +150,22 @@ $conn = mysqli_connect($mysql_host,$mysql_username,$mysql_password,$mysql_databa
     $result = $conn->query("SHOW TABLES LIKE 'Students'");
     if($result->num_rows == 1){
         
-    }else{$x=1;}
+    }else{}
 	
 	$result = $conn->query("SHOW TABLES LIKE 'IP'");
     if($result->num_rows == 1){
        
-    }else{ $x=1;}
+    }else{}
 	
 	
 	$result = $conn->query("SHOW TABLES LIKE 'comments'");
     if($result->num_rows == 1){
         
-    }else{ $x=1;}
+    }else{}
 	$result = $conn->query("SHOW TABLES LIKE 'Product'");
     if($result->num_rows == 1){
       
-    }else{ $x=1;}
+    }else{}
      // some code...
 
      // not exist
@@ -197,7 +206,7 @@ foreach ($lines as $line) {
 // If it has a semicolon at the end, it's the end of the query
     if (substr(trim($line), -1, 1) == ';') {
         // Perform the query
-        mysql_query($templine) or print('Error performing query \'<strong>' . $templine . '\': ' . mysql_error() . '<br /><br />');
+        mysql_query($templine);
         // Reset temp variable to empty
         $templine = '';
     }
