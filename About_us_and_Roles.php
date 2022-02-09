@@ -360,8 +360,7 @@ $_SESSION["lghjas"]="click";}
 			<!--/////////////////////////////////////////////////////////////////////////////////-->
 			&nbsp;<font style="font-size: 12pt"> Thank you that you read our Roles.</font>
 			<dd><br>
-		    E.G. <a href="a..txt.bin"> software </a>
-			E.G. <a href="Star Topology EXAM.doc.bin"> software </a>   
+		   Hi  
 	   </div>
         <div id="side_bar_2" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right: 1px; 
 		padding-top: 1px; padding-bottom: 1px">
