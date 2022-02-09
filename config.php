@@ -101,7 +101,7 @@ $mysql_host = 'sql204.epizy.com';
 // MySQL username
 $mysql_username = 'epiz_25638021';
 // MySQL password
-$mysql_password = 'oj7ihRq4h9biY';
+$mysql_password = 'password';
 // Database name
 $mysql_database = 'epiz_25638021_Cluster';
 
