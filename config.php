@@ -222,7 +222,7 @@ echo "Tables imported successfully";
   }
 
 $ftp_user_name='epiz_25638021';
-$ftp_user_pass='oj7ihRq4h9biY';
+$ftp_user_pass='password';
 $ftp_server='sql204.epizy.com'; 
 	
 $file = fopen("config.php");	
