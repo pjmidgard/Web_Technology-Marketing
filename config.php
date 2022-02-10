@@ -101,7 +101,7 @@ $mysql_host = 'sql204.epizy.com';
 // MySQL username
 $mysql_username = 'epiz_25638021';
 // MySQL password
-$mysql_password = 'password';
+$mysql_password = 'oj7ihRq4h9biY';
 // Database name
 $mysql_database = 'epiz_25638021_Cluster';
 
@@ -222,7 +222,7 @@ echo "Tables imported successfully";
   }
 
 $ftp_user_name='epiz_25638021';
-$ftp_user_pass='password';
+$ftp_user_pass='oj7ihRq4h9biY';
 $ftp_server='sql204.epizy.com'; 
 	
 $file = fopen("config.php");	
