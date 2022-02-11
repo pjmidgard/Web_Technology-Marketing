@@ -155,7 +155,7 @@ values('20098990','$varN8','$varN4','$varN5','ORIGINAL USSR MEDAL 1945 FOR THE V
     $result = $conn->query("SHOW TABLES LIKE 'Students'");
     if($result->num_rows == 1){
         
-    }else{;}
+    }else{}
 	
 	$result = $conn->query("SHOW TABLES LIKE 'IP'");
     if($result->num_rows == 1){
@@ -179,9 +179,11 @@ values('20098990','$varN8','$varN4','$varN5','ORIGINAL USSR MEDAL 1945 FOR THE V
 
 
     //I can't find it...
+
+    
 if($x==0)
 {
-echo "tables exists";
+
 }
 if($x==1)
 {
@@ -217,793 +219,221 @@ foreach ($lines as $line) {
     }
 }
 
-echo "Tables imported successfully";	
+
 }
   }
+  
 
 $ftp_user_name='epiz_25638021';
 $ftp_user_pass='password';
 $ftp_server='sql204.epizy.com'; 
 	
-$file = fopen("config.php");	
-flock($file,LOCK_EX);
-fclose($file);
+$filename1 = 'index.php';
+$filename2 = 'php/index(1).php';
 
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("config.php");	
-flock($file,LOCK_EX);
-fclose($file);
+if(md5_file($filename1) === md5_file($filename2)) {
+    
 }
-
-$file = fopen("style.css");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("style.css");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-
-$file = fopen("index.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("index.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("About_us_and_Roles.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("About_us_and_Roles");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("Gallery.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("Gallery.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("Gallery2.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("Gallery2.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-	
-$file = fopen("IP.php");	
-flock($file,LOCK_EX);
-fclose($file);	
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("IP.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("comments.php");	
-flock($file,LOCK_EX);
-fclose($file);	
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("comments.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("register.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("register.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-
-$file = fopen("Manageusers.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("Manageusers.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("epiz_25638021_Cluster.sql");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("epiz_25638021_Cluster.sql");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("Update_Details.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("Update_Details.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-
-
-if (!file_exists("epiz_25638021_Cluster.sql"))
-{
-$file = fopen("epiz_25638021_Cluster.sql");
-flock($file,LOCK_UN);
-fclose($file);	
-$url='http://cluster3.epizy.com/epiz_25638021_Cluster.sql';
-$path='epiz_25673480_Cluster.sql';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
-
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+else{
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
 
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 }
 
+$filename1 = 'php/About_us_and_Roles.php';
+$filename2 = 'About_us_and_Roles.php';
 
-
-
-if (!file_exists("style.css"))
-{
-$file = fopen("style.css");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/style.css';
-$path='style.css';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
-
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+if(md5_file($filename1) === md5_file($filename2)) {
+    
+}
+else{
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
 
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 }
-if (!file_exists("index.php"))
-{
-$file = fopen("index.php");	
-flock($file,LOCK_UN);
-fclose($file);
-$url='http://cluster3.epizy.com/index.php';
-$path='index.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+$filename1 = 'php/Gallery.php';
+$filename2 = 'Gallery.php';
+
+if(md5_file($filename1) === md5_file($filename2)) {
+
+}
+else{
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
 
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 }
-if (!file_exists("About_us_and_Roles.php"))
-{
-$file = fopen("About_us_and_Roles.php");	
-flock($file,LOCK_UN);
-fclose($file);				
-$url='http://cluster3.epizy.com/About_us_and_Roles.php';
-$path='About_us_and_Roles.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+$filename1 = 'php/Gallery2.php';
+$filename2 = 'Gallery2.php';
+
+if(md5_file($filename1) === md5_file($filename2)) {
+    
+}
+else{
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
 
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 }
-if (!file_exists("Update_Details.php"))
-{
-$file = fopen("Update_Details.php");	
-flock($file,LOCK_UN);
-fclose($file);					
-$url='http://cluster3.epizy.com/Update_Details.php';
-$path='Update_Details.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+$filename1 = 'php/Gallery2.php';
+$filename2 = 'Gallery2.php';
+
+if(md5_file($filename1) === md5_file($filename2)) {
+    
+}
+else{
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
-
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 
 }
-if (!file_exists("Gallery.php"))
-{
-$file = fopen("Gallery.php");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/Gallery.php';
-$path='Gallery.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+$filename1 = 'php/comments.php';
+$filename2 = 'comments.php';
+
+if(md5_file($filename1) === md5_file($filename2)) {
+    
+}
+else{
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
-
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 
 }
-if (!file_exists("Gallery2.php"))
-{
-$file = fopen("Gallery2.php");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/Gallery2.php';
-$path='Gallery2.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+$filename1 = 'php/IP.php';
+$filename2 = 'IP.php';
+
+if(md5_file($filename1) === md5_file($filename2)) {
+    
+}
+else{
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
 
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 }
-if (!file_exists("Manageusers.php"))
-{
-$file = fopen("Manageusers.php");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/Manageusers.php';
-$path='Manageusers.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+$filename1 = 'php/Register.php';
+$filename2 = 'Register.php';
+
+if(md5_file($filename1) === md5_file($filename2)) {
+    
+}
+else{
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
 
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 }
 
-if (!file_exists("comments.php"))
-{
-$file = fopen("comments.php");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/comments.php';
-$path='comments.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
+$filename1 = 'php/Update_Details.php';
+$filename2 = 'Update_Details.php';
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+if(md5_file($filename1) === md5_file($filename2)) {
+    
+}
+else{
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
-
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 
 }
-if (!file_exists("IP.php"))
-{
-$file = fopen("IP.php");	
-flock($file,LOCK_UN);
-fclose($file);				
-$url='http://cluster3.epizy.com/IP.php';
-$path='IP.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+if (file_exists($filename1)) {
+$file1 = 'php/index(1).php';
+$newfile1 = 'index.php';
+
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
-
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
-
 }
-if (!file_exists("Register.php"))
-{
-$file = fopen("Register.php");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/Register.php';
-$path='Register.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
+$filename2 = 'About_us_and_Roles';
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+if (file_exists($filename2)) {
+$file2 = 'php/About_us_and_Roles.php';
+$newfile2 = 'About_us_and_Roles.php';
+
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
-
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 
 }
+$filename3 = 'Gallery.php';
 
-if (!file_exists("style.css") && !file_exists("index.css") && !file_exists("About_us_and_Roles.php")
-&& !file_exists("Update_Details.php") && !file_exists("Gallery.php")  && !file_exists("Gallery2.php")
- && !file_exists("IP.php")  && !file_exists("Register.php") && !file_exists("zzzz.php"))
-{
-if (!file_exists("epiz_25673480_Cluster"))
-{
-$file = fopen("epiz_25673480_Cluster");
-flock($file,LOCK_UN);
-fclose($file);	
-$url='http://cluster3.epizy.com/epiz_25673480_Cluster.php';
-$path='epiz_25673480_Cluster';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
+if (file_exists($filename3)) {
+$file3 = 'php/Gallery.php';
+$newfile3 = 'Gallery.php';
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+if (!copy($filename1 , $filename2)) {
+    
     }
-  }
 
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 }
 
+$filename4 = 'Gallery2.php';
 
-if (!file_exists("style.css"))
-{
-$file = fopen("style.css");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/style.css';
-$path='style.css';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
+if (file_exists($filename4)) {
+$file4 = 'php/Gallery2.php';
+$newfile4 = 'Gallery2.php';
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+if (!copy($file4, $newfile4)) {
+    
     }
-  }
 
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 }
-if (!file_exists("index.php"))
-{
-$file = fopen("index.php");	
-flock($file,LOCK_UN);
-fclose($file);
-$url='http://cluster3.epizy.com/index.php';
-$path='index.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+$filename5 = 'comments';
+
+if (file_exists($filename5)) {
+$file5 = 'php/comments.php';
+$newfile5 = 'comments.php';
+
+if (!copy($file5, $newfile5)) {
+    
     }
-  }
 
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 }
-if (!file_exists("About_us_and_Roles.php"))
-{
-$file = fopen("About_us_and_Roles.php");	
-flock($file,LOCK_UN);
-fclose($file);				
-$url='http://cluster3.epizy.com/About_us_and_Roles.php';
-$path='About_us_and_Roles.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+$filename6 = 'IP.php';
+
+if (file_exists($filename6)) {
+$file6 = 'php/IP.php';
+$newfile6 = 'IP.php';
+
+if (!copy($file6, $newfile6)) {
+    
     }
-  }
 
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 }
-if (!file_exists("Update_Details.php"))
-{
-$file = fopen("Update_Details.php");	
-flock($file,LOCK_UN);
-fclose($file);					
-$url='http://cluster3.epizy.com/Update_Details.php';
-$path='Update_Details.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+$filename7 = 'Register.php';
+
+if (file_exists($filename7)) {
+$file7 = 'php/Register.php';
+$newfile7 = 'Register.php';
+
+if (!copy($file7, $newfile7)) {
+    
     }
-  }
-
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
 
 }
-if (!file_exists("Gallery.php"))
-{
-$file = fopen("Gallery.php");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/Gallery.php';
-$path='Gallery.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
 
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
+$filename8 = 'Update_Details.php';
+
+if (file_exists($filename8)) {
+$file8 = 'php/Update_Details.php';
+$newfile8 = 'Update_Details.php';
+
+if (!copy($file8, $newfile8)) {
+    
     }
-  }
 
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
-
-}
-if (!file_exists("Gallery2.php"))
-{
-$file = fopen("Gallery2.php");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/Gallery2.php';
-$path='Gallery2.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
-
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
-    }
-  }
-
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
-}
-if (!file_exists("Manageusers.php"))
-{
-$file = fopen("Manageusers.php");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/Manageusers.php';
-$path='Manageusers.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
-
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
-    }
-  }
-
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
-}
-
-if (!file_exists("comments.php"))
-{
-$file = fopen("comments.php");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/comments.php';
-$path='comments.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
-
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
-    }
-  }
-
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
-
-}
-if (!file_exists("IP.php"))
-{
-$file = fopen("IP.php");	
-flock($file,LOCK_UN);
-fclose($file);				
-$url='http://cluster3.epizy.com/IP.php';
-$path='IP.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
-
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
-    }
-  }
-
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
-
-}
-if (!file_exists("Register.php"))
-{
-$file = fopen("Register.php");	
-flock($file,LOCK_UN);
-fclose($file);		
-$url='http://cluster3.epizy.com/Register.php';
-$path='Register.php';
-$newfilename = $path;
-  $file = fopen ($url, "rb");
-  if ($file) {
-    $newfile = fopen ($newfilename, "wb");
-
-    if ($newfile)
-    while(!feof($file)) {
-      fwrite($newfile, fread($file, 100 * 8 ), 100 * 8 );
-    }
-  }
-
-  if ($file) {
-    fclose($file);
-  }
-  if ($newfile) {
-    fclose($newfile);
-  }
-
-}
-}
-
-
-$file = fopen("Gallery.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("Gallery.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("Gallery2.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("Gallery2.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-	
-$file = fopen("IP.php");	
-flock($file,LOCK_EX);
-fclose($file);	
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("IP.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("comments.php");	
-flock($file,LOCK_EX);
-fclose($file);	
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("comments.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("register.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("register.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-
-$file = fopen("Manageusers.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("Manageusers.php");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("epiz_25638021_Cluster.sql");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("epiz_25638021_Cluster.sql");	
-flock($file,LOCK_EX);
-fclose($file);
-}
-
-$file = fopen("Update_Details.php");	
-flock($file,LOCK_EX);
-fclose($file);
-
-if (flock($file,LOCK_SH) || flock(LOCK_UN) || flock(LOCK_NB)) {
-$file = fopen("Update_Details.php");	
-flock($file,LOCK_EX);
-fclose($file);
 }
 
 
