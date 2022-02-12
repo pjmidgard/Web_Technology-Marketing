@@ -229,8 +229,7 @@ $_SESSION["lghjas"]="click";}
 			<!--/////////////////////////////////////////////////////////////////////////////////-->
 			&nbsp;<font style="font-size: 12pt"> Thank you that you read our Roles.</font>
 			<dd><br>
-		    E.G. <a href="a..txt.bin"> Program </a>
-			E.G. <a href="Star Topology EXAM.doc.bin"> Program </a>   
+		    Hi!
 	   </div>
         <div id="side_bar_2" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right: 1px; 
 		padding-top: 1px; padding-bottom: 1px">
@@ -299,7 +298,7 @@ if(isset($_SESSION["lg"])) //die('');
 		</div>
 						<div id="footer" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right:
 						1px; padding-top: 1px; padding-bottom: 1px"><br>
-	&nbsp;&nbsp; Created by Jurijus Pacalovas <a href="https://github.com/pjmidgard/White_hole_1.0.0.2.0 ">https://github.com/pjmidgard/White_hole_1.0.0.2.0  Software Application Program</a><br>
+	&nbsp;&nbsp; Created by Jurijus Pacalovas <a href="https://github.com/pjmidgard/White_hole_1.0.0.2.0 ">https://github.com/pjmidgard/White_hole_1.0.0.2.0</a> Spring-84 Compression Software<br>
 	&nbsp;&nbsp;
 						</div>
 			<br><br>
