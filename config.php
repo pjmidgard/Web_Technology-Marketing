@@ -85,10 +85,19 @@ echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever
 $x=1;
 }
 
-if($result9=="http://www.faleristics4eforever.epizy.com/Register.php/")
+
+
+if($result9=="http://www.faleristics4eforever.epizy.com/index.php/")
 {
-echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/">';
-$x=1;
+$sql = "insert into Students (student_id,first_name,last_name,email,password,admin) 
+values('20098989','John','Smith','lelkamoja@yahoo.com','$2y$10$h0srYDtJ/s0.1xPKfnUtlO9N3e/uCD6HuxzzV.kUF.5sCm4gHzq.S',1)";
+$items = $dbConnection->prepare("$sql");
+$items->execute();
+
+$sql6 = "insert into Students (student_id,first_name,last_name,email,password,admin) 
+values('20098181','John','Smith','lelkamoja@yahoo.com','$2y$10$h0srYDtJ/s0.1xPKfnUtlO9N3e/uCD6HuxzzV.kUF.5sCm4gHzq.S',0)";
+$items = $dbConnection->prepare("$sql6");
+$items->execute();
 }
 
 $filename = 'epiz_25638021_Cluster.sql';
@@ -122,12 +131,12 @@ $items = $dbConnection->prepare("$sql4");
 $items->execute();
 
 $sql = "insert into Students (student_id,first_name,last_name,email,password,admin) 
-values('20098888','John','Smith','lelkamoja@yahoo.com','$2y$50$EIpeM1eAONuEg8KHMR3yY.vQhkFTRztOlACM4QEtDX6bJh8bEl0Da',1)";
+values('20098989','John','Smith','lelkamoja@yahoo.com','$2y$10$h0srYDtJ/s0.1xPKfnUtlO9N3e/uCD6HuxzzV.kUF.5sCm4gHzq.S',1)";
 $items = $dbConnection->prepare("$sql");
 $items->execute();
 
 $sql6 = "insert into Students (student_id,first_name,last_name,email,password,admin) 
-values('20098889','John','Smith','lelkamoja@yahoo.com','$2y$50$EIpeM1eAONuEg8KHMR3yY.vQhkFTRztOlACM4QEtDX6bJh8bEl0Da',0)";
+values('20098181','John','Smith','lelkamoja@yahoo.com','$2y$10$h0srYDtJ/s0.1xPKfnUtlO9N3e/uCD6HuxzzV.kUF.5sCm4gHzq.S',0)";
 $items = $dbConnection->prepare("$sql6");
 $items->execute();
 
