@@ -290,7 +290,7 @@ if($df==1){echo '<font color="#E2000D" style="font-size: 10pt">
 
 
 		//////
-if($dlin1>0 && $dlin2>0 && $dlin3>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3 && $dlin1==9)
+if($dlin1>0 && $dlin2>0 && $dlin3>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3 && $dlin1!=8)
 {
 $varN3f = password_hash($varN3, PASSWORD_DEFAULT);
 $sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
@@ -305,7 +305,7 @@ if($varN2!=$varN3)
 echo '<font color="#E2000D" style="font-size: 12pt">
 &nbsp;&nbsp;  The password you typed don not match, please, try again!!! </font>';
 }       
-        elseif($dlin1>10)
+        elseif($dlin1==8)
 		{echo '<font color="#E2000D" style="font-size: 12pt">
 		&nbsp;&nbsp;  Please, try fill our Register form again!!! Too much numbers!!! </font>';} 
 		elseif($dlin1>10 || $dlin1==0 || $dlin2==0 || $dlin3==0 || $dlin4==0 || $dlin5==0 || $dlin6==0 || $varN2!=$varN3)
