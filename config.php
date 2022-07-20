@@ -87,17 +87,13 @@ $x=1;
 
 
 
-if($result9=="http://www.faleristics4eforever.epizy.com/index.php/")
+if($result9=="http://www.faleristics4eforever.epizy.com/Register.php/")
 {
-$sql = "insert into Students (student_id,first_name,last_name,email,password,admin) 
-values('20098989','John','Smith','lelkamoja@yahoo.com','$2y$10$h0srYDtJ/s0.1xPKfnUtlO9N3e/uCD6HuxzzV.kUF.5sCm4gHzq.S',1)";
-$items = $dbConnection->prepare("$sql");
-$items->execute();
+ echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/">';
 
-$sql6 = "insert into Students (student_id,first_name,last_name,email,password,admin) 
-values('20098181','John','Smith','lelkamoja@yahoo.com','$2y$10$h0srYDtJ/s0.1xPKfnUtlO9N3e/uCD6HuxzzV.kUF.5sCm4gHzq.S',0)";
-$items = $dbConnection->prepare("$sql6");
-$items->execute();
+$x=1;
+
+
 }
 
 $filename = 'epiz_25638021_Cluster.sql';
@@ -106,7 +102,7 @@ $mysql_host = 'sql204.epizy.com';
 // MySQL username
 $mysql_username = 'epiz_25638021';
 // MySQL password
-$mysql_password = 'password';
+$mysql_password = 'oj7ihRq4h9biY';
 // Database name
 $mysql_database = 'epiz_25638021_Cluster';
 
@@ -230,7 +226,7 @@ foreach ($lines as $line) {
   
 
 $ftp_user_name='epiz_25638021';
-$ftp_user_pass='password';
+$ftp_user_pass='oj7ihRq4h9biY';
 $ftp_server='sql204.epizy.com'; 
 	
 $filename1 = 'index.php';
