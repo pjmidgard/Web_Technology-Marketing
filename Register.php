@@ -290,11 +290,11 @@ if($df==1){echo '<font color="#E2000D" style="font-size: 10pt">
 
 
 		//////
-if($dlin1>0 && $dlin2>0 && $dlin3>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3 && $dlin1<=10 )
+if($dlin1>0 && $dlin2>0 && $dlin3>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3 && $dlin1==9)
 {
 $varN3f = password_hash($varN3, PASSWORD_DEFAULT);
 $sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
-
+           
 
 }
 	
@@ -324,6 +324,7 @@ else
 if($df==0){	
 $items = $dbConnection->prepare("$sql");
 $items->execute();
+
  echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
 }
 if($df==1){echo '<font color="#E2000D" style="font-size: 10pt">
