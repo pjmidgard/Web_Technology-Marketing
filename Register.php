@@ -14,7 +14,7 @@
     <style>
 	
     	</style>
-	
+
     </head>
 			<body>
 			<div id="google_translate_element"></div>
@@ -183,164 +183,116 @@ echo '
 		$dt=0;$de=0;
 		$df=0;
 		
+		
+		
+		
+		
+						
+
+		   
+
+		    if ( (!isset($_POST["Roles"]))  == "on" )
+			$RUL = 0; 
+			else
+				$RUL = 1;
 			
-		if($dlin8==0){$de=1;$i=0;}
-		if($dlin8>0)
-	    {
-		do
-	    {
-		$i++;
-		$add=$varN6[$i];
-		if($add=="@"){$h=1;$addg=$varN6[$i];}
-		if($i<$dlin8){$h=1;}
-		}while($h<1 || $i<$dlin8);
-         }		
-		if($addg!="@" && $i<$dlin8 || $addg!="@" && $i<$dlin7)
-		{
-		$dt=3;
-		 echo '
-		<font color="#E2000D" style="font-size: 10pt">
-		&nbsp;&nbsp;  You wrong fill the email column, please, try again !!! </font>';
-		}
+			if($RUL==0) {
+				$dt=3;
+				 echo '
+				<font color="#E2000D" style="font-size: 7pt">
+				&nbsp;&nbsp;  Sorry, but you cannot register because you need to choose that you agree our Roles !!! </font>';
+			}
 		
-		
-		if ( (!isset($_POST["Roles"]))  == "on" )
-		$RUL = 0; 
-	else
-		$RUL = 1;
-		
-		if($RUL==0) {
-		$dt=3;
-		 echo '
-		<font color="#E2000D" style="font-size: 7pt">
-		&nbsp;&nbsp;  Sorry, but you cannot register because you need to choose that you agree our Roles !!! </font>';
-		}
 		
 		
 
-if($dt!=3)
-{
+			if($dt!=3)
+			{
+	
 
 	
 		
 		
-if($dt!=3)
-{
 
-$dlin1=strlen($varN1);$dlin2=strlen($varN2);
-$dlin3=strlen($varN3);$dlin4=strlen($varN4);
-$dlin5=strlen($varN5);$dlin6=strlen($varN6);
 
 
 /* password 5 */
 //echo $row[4]." <br> "; 
 ////////////	
-		
-
-
-
-
-
-/*
-Students` (`student_id`,`first_name`,`last_name`,`email`,`password`,`admin`) VALUES
-   					   ('20101234'  ,'Brian'   , "O'Driscoll", 'Brian@cctstudent.ie','1111'    ,0),
-	$varN1 = $_POST["login"];
-		$varN2 = $_POST["pass1"];
-        $varN3 = $_POST["pass2"];
-        $varN4 = $_POST["first_name"];	
-        $varN5 = $_POST["last_name"];
-        $varN6 = $_POST["email"];	
-		*/
-//
-
-if($dlin1>0 && $dlin2>0 && $dlin3>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3)
-{
-$sql = "SELECT * FROM Students WHERE student_id = '$varN1%'";
-}
-
-
-if($dlin1>0 && $dlin2>0 && $dlin3>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3)
-{
-$items = $dbConnection->prepare("$sql");
-$items->execute();
-foreach ($items as $row) 
-{
-//////
-/* login 1 */ 
-//echo $row[0]." <br> "; 
-$row1=$row[0]; $ty2=$row[0];
-$ty3[0]=$ty2[0];$ty4=$ty3[0];
-$dlin3=strlen($ty4);
-if($dlin3==1){$df=1;}
-
-
-}
-}
-if($df==1){echo '<font color="#E2000D" style="font-size: 10pt">
-&nbsp;&nbsp; This ID already exist please, try again !!! </font>';} 
-
-
-/* password 5 */
-//echo $row[4]." <br> "; 
-////////////	
-	if($df==0){	
+	
 
 
 
 
 
 		//////
-if($dlin1>0 && $dlin2>0 && $dlin3>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3 && $dlin1!=8 && $dlin1<=10)
-{
-$varN3f = password_hash($varN3, PASSWORD_DEFAULT);
-$sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
-           
 
-}
 	
-
+                $dlin1=strlen($varN1);$dlin2=strlen($varN2);
+				$dlin3=strlen($varN3);$dlin4=strlen($varN4);
+				$dlin5=strlen($varN5);$dlin6=strlen($varN6);
 //session
-if($varN2!=$varN3)
-{
-echo '<font color="#E2000D" style="font-size: 12pt">
-&nbsp;&nbsp;  The password you typed don not match, please, try again!!! </font>';
-}       
-        elseif($dlin1==8 || $dlin1>=10)
-		{echo '<font color="#E2000D" style="font-size: 12pt">
-		&nbsp;&nbsp;  Please, try fill our Register form again!!! Too much numbers!!! </font>';} 
-		elseif($dlin1>10 || $dlin1==0 || $dlin2==0 || $dlin3==0 || $dlin4==0 || $dlin5==0 || $dlin6==0 || $varN2!=$varN3)
-		{echo '<font color="#E2000D" style="font-size: 12pt">
-		&nbsp;&nbsp;  Please, try fill our Register form again!!! </font>';} 
-		//////
-		else if (!is_numeric($varN1))
-		{
-		echo '<font color="#E2000D" style="font-size: 10pt">
-		&nbsp;&nbsp;  Please, try fill our UPDATE form again!!! Must be numbers </font>';$as=1;
-			
+				if($varN2!=$varN3)
+				{
+				echo '<font color="#E2000D" style="font-size: 12pt">
+				&nbsp;&nbsp;  The password you typed don not match, please, try again!!! </font>';
+				}       
+				elseif($dlin1>=10)
+				{echo '<font color="#E2000D" style="font-size: 12pt">
+				&nbsp;&nbsp;  Please, try fill our Register form again!!! Too much numbers!!! </font>';} 
+				elseif($dlin1>10 || $dlin1==0 || $dlin2==0 || $dlin3==0 || $dlin4==0 || $dlin5==0 || $dlin6==0 || $varN2!=$varN3)
+				{echo '<font color="#E2000D" style="font-size: 12pt">
+				&nbsp;&nbsp;  Please, try fill our Register form again!!! </font>';} 
+				//////
+				else if (!is_numeric($varN1))
+				{
+				echo '<font color="#E2000D" style="font-size: 10pt">
+				&nbsp;&nbsp;  Please, try fill our UPDATE form again!!! Must be numbers </font>';$as=1;
+					
+				}
+                $result = mysql_query("SELECT FROM Students WHERE student_id = '$varN1%'");
+				if (!mysql_num_rows($result) && strlen($varN1)>0 && strlen($varN2)>0 && strlen($varN3)>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3 && $dlin1<=10 && s_numeric($varN1))
+				{    
+					 
+
+					
+					$US4i=$row[0];
+					$_SESSION["login"]="$US4i";
+					$varN3f = password_hash($varN3, PASSWORD_DEFAULT);
+					$sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
+					$items = $dbConnection->prepare("$sql");
+					$items->execute();
+					$df=2;
+
+				}
+				if (mysql_num_rows($result))
+					{
+				
+					echo '<font color="#E2000D" style="font-size: 10pt">
+					nbsp;&nbsp; This ID already exist please, try again !!! </font>';
+					$df=1;
+					} 
+				
+				if($df==2){#
+				echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
+				}
 		}
+	}
+}
 else
-{
-
-if($df==0){	
-$items = $dbConnection->prepare("$sql");
-$items->execute();
-
- echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
-}
-if($df==1){echo '<font color="#E2000D" style="font-size: 10pt">
-&nbsp;&nbsp; This ID already exist please, try again !!! </font>';} 
-//session
-//echo  $row[0]." <br> "; 
-
-}
-
-}
-}
+{   
+    if($df==1){
+				echo '<font color="#E2000D" style="font-size: 10pt">
+				nbsp;&nbsp; This ID already exist please, try again !!! </font>';
 	}
+	if($df==2 || $df==0){#
+				echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
 	}
+
 //if ($_SERVER["REQUEST_METHOD"] == "POST")
-
 }
+
+
 ?>
 
   
