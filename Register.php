@@ -124,7 +124,7 @@ function googleTranslateElementInit() {
 				<!--/////////////////////////////////////////////////////////////////////////////////-->
 <table width="500" height="100" border="1" bgcolor="#FFFFFF" style="border-color: #C0C0C0" align="center">
 <tr><td>
-<form method="POST" action="Register.php">
+<form method="POST" action="index.php">
 <?php
 
 if(isset($_SESSION["lg"])) //die('');
