@@ -252,13 +252,7 @@ echo '
 				}
 		                
 		
-				if (mysql_num_rows($result))
-					{
-				
-					echo '<font color="#E2000D" style="font-size: 10pt">
-					nbsp;&nbsp; This ID already exist please, try again !!! </font>';
-					
-					} 		
+						
 		  $query = "SELECT * FROM Students WHERE student_id = '$varN1%'"; $result = mysqli_query($cond, $query); if(empty($result)) {   
 					$varN3f = password_hash($varN3, PASSWORD_DEFAULT);
 					$sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
@@ -269,24 +263,11 @@ echo '
 				}
 
 				
-				if($df==2){#
-				echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
-				}
+		
 		}
 	}
 }
-else
-{   
-    if($df==1){
-				echo '<font color="#E2000D" style="font-size: 10pt">
-				nbsp;&nbsp; This ID already exist please, try again !!! </font>';
-	}
-	if($df==2 || $df==0){#
-				echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
-	}
 
-//if ($_SERVER["REQUEST_METHOD"] == "POST")
-}
 
 
 ?>
