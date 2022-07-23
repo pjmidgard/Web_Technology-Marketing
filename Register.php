@@ -124,7 +124,7 @@ function googleTranslateElementInit() {
 				<!--/////////////////////////////////////////////////////////////////////////////////-->
 <table width="500" height="100" border="1" bgcolor="#FFFFFF" style="border-color: #C0C0C0" align="center">
 <tr><td>
-<form method="POST" action="index.php">
+<form method="POST" action="Register.php">
 <?php
 
 if(isset($_SESSION["lg"])) //die('');
@@ -183,10 +183,12 @@ echo '
 		$dt=0;$de=0;
 		$df=0;
 		
+		 $dlin1=strlen($varN1);$dlin2=strlen($varN2);
+				$dlin3=strlen($varN3);$dlin4=strlen($varN4);
+				$dlin5=strlen($varN5);$dlin6=strlen($varN6);
+		$result = mysql_query("SELECT * FROM Students WHERE student_id = '$varN1%'");
 		
-		
-		
-		
+				if (mysql_num_rows($result)) {}
 						
 
 		   
@@ -228,9 +230,7 @@ echo '
 		//////
 
 	
-                $dlin1=strlen($varN1);$dlin2=strlen($varN2);
-				$dlin3=strlen($varN3);$dlin4=strlen($varN4);
-				$dlin5=strlen($varN5);$dlin6=strlen($varN6);
+               
 //session
 				if($varN2!=$varN3)
 				{
@@ -250,23 +250,26 @@ echo '
 				&nbsp;&nbsp;  Please, try fill our UPDATE form again!!! Must be numbers </font>';$as=1;
 					
 				}
-                $result = mysql_query("SELECT FROM Students WHERE student_id = '$varN1%'");
-				if (!mysql_num_rows($result) && strlen($varN1)>0 && strlen($varN2)>0 && strlen($varN3)>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3 && $dlin1<=10 && s_numeric($varN1))
-				{    
-					$varN3f = password_hash($varN3, PASSWORD_DEFAULT);
-					$sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
-					$items = $dbConnection->prepare("$sql");
-					$items->execute();
-					$df=2;
-
-				}
+		                
+		
 				if (mysql_num_rows($result))
 					{
 				
 					echo '<font color="#E2000D" style="font-size: 10pt">
 					nbsp;&nbsp; This ID already exist please, try again !!! </font>';
-					$df=1;
-					} 
+					
+					} 		
+		  else
+					    
+				{    
+					$varN3f = password_hash($varN3, PASSWORD_DEFAULT);
+					$sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
+					$items = $dbConnection->prepare("$sql");
+					$items->execute();
+					echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
+
+				}
+
 				
 				if($df==2){#
 				echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
