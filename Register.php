@@ -186,7 +186,7 @@ echo '
 		 $dlin1=strlen($varN1);$dlin2=strlen($varN2);
 				$dlin3=strlen($varN3);$dlin4=strlen($varN4);
 				$dlin5=strlen($varN5);$dlin6=strlen($varN6);
-		$result = mysql_query("SELECT * FROM Students WHERE student_id = '$varN1%'");
+	
 		
 				if (mysql_num_rows($result)) {}
 						
@@ -259,9 +259,7 @@ echo '
 					nbsp;&nbsp; This ID already exist please, try again !!! </font>';
 					
 					} 		
-		  else
-					    
-				{    
+		  $query = "SELECT * FROM student_id = '$varN1%'"; $result = mysqli_query($cond, $query); if(empty($result)) {   
 					$varN3f = password_hash($varN3, PASSWORD_DEFAULT);
 					$sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
 					$items = $dbConnection->prepare("$sql");
