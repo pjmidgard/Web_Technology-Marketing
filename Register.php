@@ -124,7 +124,7 @@ function googleTranslateElementInit() {
 				<!--/////////////////////////////////////////////////////////////////////////////////-->
 <table width="500" height="100" border="1" bgcolor="#FFFFFF" style="border-color: #C0C0C0" align="center">
 <tr><td>
-<form method="POST" action="index.php">
+<form method="POST" action="Register.php">
 <?php
 
 if(isset($_SESSION["lg"])) //die('');
@@ -199,7 +199,7 @@ echo '
 			if($RUL==0) {
 				$dt=3;
 				 echo '
-				<font color="#E2000D" style="font-size: 7pt">
+				<font color="#E2000D" style="font-size: 10pt">
 				&nbsp;&nbsp;  Sorry, but you cannot register because you need to choose that you agree our Roles !!! </font>';
 			}
 		
@@ -226,12 +226,13 @@ echo '
 
 
 		//////
-
+                
 	
                 $dlin1=strlen($varN1);$dlin2=strlen($varN2);
 				$dlin3=strlen($varN3);$dlin4=strlen($varN4);
 				$dlin5=strlen($varN5);$dlin6=strlen($varN6);
-//session
+//session   
+                $result = mysql_query("SELECT FROM Students WHERE student_id = '$varN1%'");
 				if($varN2!=$varN3)
 				{
 				echo '<font color="#E2000D" style="font-size: 12pt">
@@ -244,47 +245,36 @@ echo '
 				{echo '<font color="#E2000D" style="font-size: 12pt">
 				&nbsp;&nbsp;  Please, try fill our Register form again!!! </font>';} 
 				//////
-				else if (!is_numeric($varN1))
+				elseif (!is_numeric($varN1))
 				{
 				echo '<font color="#E2000D" style="font-size: 10pt">
 				&nbsp;&nbsp;  Please, try fill our UPDATE form again!!! Must be numbers </font>';$as=1;
 					
 				}
-                $result = mysql_query("SELECT FROM Students WHERE student_id = '$varN1%'");
-				if (!mysql_num_rows($result) && strlen($varN1)>0 && strlen($varN2)>0 && strlen($varN3)>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3 && $dlin1<=10 && s_numeric($varN1))
-				{    
-					$varN3f = password_hash($varN3, PASSWORD_DEFAULT);
-					$sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
-					$items = $dbConnection->prepare("$sql");
-					$items->execute();
-					$df=2;
-
-				}
-				if (mysql_num_rows($result))
-					{
 				
-					echo '<font color="#E2000D" style="font-size: 10pt">
-					nbsp;&nbsp; This ID already exist please, try again !!! </font>';
-					$df=1;
-					} 
+			
+			    elseif (mysql_num_rows(!$result) && strlen($varN1)>0 && strlen($varN2)>0 && strlen($varN3)>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3 && $dlin1<=10 && s_numeric($varN1))
+					{   
+					
+					    
+						$varN3f = password_hash($varN3, PASSWORD_DEFAULT);
+						$sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
+						$items = $dbConnection->prepare("$sql");
+						$items->execute();
+					
+					}
+				else
+				{
 				
-				if($df==2){#
-				echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
+					echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
 				}
+								
+                
+			
+				
+				
 		}
 	}
-}
-else
-{   
-    if($df==1){
-				echo '<font color="#E2000D" style="font-size: 10pt">
-				nbsp;&nbsp; This ID already exist please, try again !!! </font>';
-	}
-	if($df==2 || $df==0){#
-				echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
-	}
-
-//if ($_SERVER["REQUEST_METHOD"] == "POST")
 }
 
 
@@ -379,7 +369,7 @@ function checkpassword(password) {
 		<table class="one"  align="center">
 		<tr> <td>
 		<br>
-		<form method="POST" action="http://www.faleristics4eforever.epizy.com/index.php">
+		<form method="POST" action="http://www.faleristics4eforever.epizy.com/Register.php">
 
 
 
