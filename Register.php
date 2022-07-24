@@ -250,8 +250,30 @@ echo '
 				&nbsp;&nbsp;  Please, try fill our UPDATE form again!!! Must be numbers </font>';$as=1;
 					
 				}
-		                
-		
+				$login=$varN1;
+		 	$sql1 = "SELECT * FROM Students WHERE student_id = '$login'";
+$items = $dbConnection->prepare("$sql1");
+$items->execute();
+foreach ($items as $row) 
+{
+//////
+/* login 1 */ 
+//echo $row[0]." <br> "; 
+$row1=$row[0]; $ty2=$row[0];
+$ty3[0]=$ty2[0];$ty4=$ty3[0];
+$dlin3=strlen($ty4);
+$df=1;
+}
+
+/* password 5 */
+//echo $row[4]." <br> "; 
+////////////	
+			  
+		  $login2=$row[0];
+		  if($login2==$login && !empty($login2)){ 	echo '<font color="#E2000D" style="font-size: 10pt">
+				&nbsp;&nbsp; ID already exist. </font>';$as=1;
+					  }  
+		  elseif($US6i2!=$login && empty($login2)){
 						
 		                $query = "SELECT FROM Students WHERE student_id = '$varN1%'"; $result = mysqli_query($cond, $query); if(empty($result)) {   
 		                $varN3f = password_hash($varN3, PASSWORD_DEFAULT);
@@ -294,6 +316,7 @@ echo '
  
 					echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
      
+				 }
 				}
 			
 		
