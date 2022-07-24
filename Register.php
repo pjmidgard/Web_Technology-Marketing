@@ -201,8 +201,9 @@ echo '
 			if($RUL==0) {
 				$dt=3;
 				 echo '
-				<font color="#E2000D" style="font-size: 7pt">
-				&nbsp;&nbsp;  Sorry, but you cannot register because you need to choose that you agree our Roles !!! </font>';
+				<font color="#E2000D" style="font-size: 7
+				10pt">
+				&nbsp;&nbsp;  You need to choose that you agree our Roles !!! </font>';
 			}
 		
 		
