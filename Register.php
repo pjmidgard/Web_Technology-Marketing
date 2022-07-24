@@ -278,8 +278,8 @@ $df=1;
 						
 		                $query = "SELECT FROM Students WHERE student_id = '$varN1%'"; $result = mysqli_query($cond, $query); if(empty($result)) {   
 		                $varN3f = password_hash($varN3, PASSWORD_DEFAULT);
-			        $sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
-			        $result = mysqli_query($cond, $sql);
+			            $sql = "insert into Students (student_id,first_name,last_name,email,password,admin) values('$varN1','$varN4','$varN5','$varN6','$varN3f',0)";
+			            $result = mysqli_query($cond, $sql);
 				
 
 
@@ -314,7 +314,14 @@ $df=1;
 
                                    }
 
- 
+                    echo '<font color="#EEEEED" style="font-size: 12pt">
+				    &nbsp;&nbsp;  You register seccessfully </font>';$as=1;
+					$x = 1;
+
+					while($x <20000000) {
+						  
+						  $x++;
+						}
 					echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
      
 				 }
