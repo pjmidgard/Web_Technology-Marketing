@@ -188,7 +188,7 @@ echo '
 				$dlin5=strlen($varN5);$dlin6=strlen($varN6);
 	
 		
-				if (mysql_num_rows($result)) {}
+				
 						
 
 		   
@@ -274,7 +274,7 @@ $df=1;
 		  if($login2==$login && !empty($login2)){ 	echo '<font color="#E2000D" style="font-size: 10pt">
 				&nbsp;&nbsp; ID already exist. </font>';$as=1;
 					  }  
-		  elseif($US6i2!=$login && empty($login2)){
+		  elseif($US6i2!=$login && empty($login2) && $dlin1<11 && $dlin1>0 && $dlin2>0 && $dlin3>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3){
 						
 		                $query = "SELECT FROM Students WHERE student_id = '$varN1%'"; $result = mysqli_query($cond, $query); if(empty($result)) {   
 		                $varN3f = password_hash($varN3, PASSWORD_DEFAULT);
