@@ -199,7 +199,7 @@ if(!isset($_SESSION["lgi"])!="check") //die('');
 if(isset($_SESSION["lg"]) || isset($_SESSION["lj"]) || isset($_SESSION["fg"])) //die('');
 {
 $ddd=$_SESSION["lj"];
-		{$sqlj = "SELECT * FROM Students WHERE student_id = '$ddd'";}
+		{$sqlj = "SELECT * FROM Students WHERE student_id = '$ddd' LIMIT 1";}
 $items = $dbConnection->prepare("$sqlj");
 $items->execute();
 //(`student_id`,`first_name`,`last_name`,`email`,`password`,`admin`)
