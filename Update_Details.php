@@ -143,7 +143,7 @@ session_start();
 $_SESSION["lfg"]="You successful Update";
 if(isset($_SESSION["lfg"]))
 {
-echo '<font color="#28F000" style="font-size: 12pt">
+echo '<font color="blue" style="font-size: 12pt">
 		&nbsp;&nbsp;'  .$_SESSION["lfg"]. '!!! </font>';
 		echo
 '<form method="POST" action="Update_Details.php">
@@ -174,7 +174,7 @@ if(!isset($_SESSION["lfg"]))
 {}
 elseif(isset($_SESSION["lfg"])=="You successful Update")
 {
-echo '<font color="#28F000" style="font-size: 12pt">
+echo '<font color="blue" style="font-size: 12pt">
 		&nbsp;&nbsp;'  .$_SESSION["lfg"]. '!!! </font>';
 $as=1;
 echo
@@ -396,7 +396,7 @@ echo '<font color="#E2000D" style="font-size: 12pt">
 &nbsp;&nbsp;  The password you typed don not match, please, try again!!! </font>';$as=1;
 }
 		elseif($dlin2==0 || $dlin3==0 || $dlin4==0 || $dlin5==0 || $dlin6==0 || $varN2!=$varN3)
-		{echo '<font color="#E2000D" style="font-size: 12pt">
+		{echo '<font color="blue" style="font-size: 12pt">
 		&nbsp;&nbsp;  Please, try fill our UPDATE form again!!! </font>';$as=1;} 
 		//////
 if($dlin2>0 && $dlin3>0 && $dlin4>0 && $dlin5>0 && $dlin6>0 && $varN2==$varN3)
@@ -436,7 +436,7 @@ $_SESSION["lfg"]="You successful Update";
 if(isset($_SESSION["lg"]) && isset($_SESSION["lj"]))
 {
 echo '<div align="center">
-<font color green style="font-size:12pt">';if($_SESSION["fg"]=="1"){echo "Admin <br>";}else{echo "USER <br>";} 
+<font color blue style="font-size:12pt">';if($_SESSION["fg"]=="1"){echo "Admin <br>";}else{echo "USER <br>";} 
 echo "</font></div>";
 echo "You are welcome ";
 echo $_SESSION["lj"]. " <br> ";
@@ -472,7 +472,7 @@ if(isset($_SESSION["lg"]) && isset($_SESSION["lj"])) //die('');
 <?php
 function You_have_Sign_in(){
 $df=2;
-echo '<b><font color ="green"> You have Sign in </font></b>';
+echo '<b><font color ="blue"> You have Sign in </font></b>';
 }
 
 if(isset($_SESSION["lg"])) //die('');
