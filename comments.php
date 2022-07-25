@@ -35,7 +35,7 @@ function googleTranslateElementInit() {
 		  ?>
 						<div id="header" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right:
 						1px; padding-top: 1px; padding-bottom: 1px"><br>
-	&nbsp;&nbsp; <marquee> Web Technology/Marketing  </marquee><br>
+	&nbsp;&nbsp; <marquee> Web Technology </marquee><br>
 	&nbsp;&nbsp; 
 						</div>
 <div id="horizontal_menu" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right: 1px;

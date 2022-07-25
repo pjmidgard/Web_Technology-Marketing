@@ -35,7 +35,7 @@ function googleTranslateElementInit() {
 		  ?>
 						<div id="header" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right:
 						1px; padding-top: 1px; padding-bottom: 1px"><br>
-	&nbsp;&nbsp; <marquee> Web Technology/Marketing  </marquee><br>
+	&nbsp;&nbsp; <marquee> Web Technology </marquee><br>
 	&nbsp;&nbsp; 
 						</div>
 <div id="horizontal_menu" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right: 1px;
@@ -44,7 +44,7 @@ function googleTranslateElementInit() {
 				<br>
 				<div align="center">
 					<ul>
-						&nbsp;&nbsp; <li class="s"><a href="http://www.faleristics4eforever.epizy.com/index.php"><font style="font-size:12px"> Home </font></a></li> 
+						&nbsp;&nbsp; <li class="s"><a href="http://www.cluster3.epizy.com/index.php"><font style="font-size:12px"> Home </font></a></li> 
 						<!-- login page -->
 						&nbsp;&nbsp; <li class="s"><a href="About_us_and_Roles.php">
 						<font style="font-size:12px"> About_us_and_Roles </font></a></li> 
@@ -121,7 +121,7 @@ function googleTranslateElementInit() {
 			</div>  
 			<div id="Bofore_Content" style="border-style: solid; border-width: 1px; padding-left: 1px; 
 			padding-right: 1px; padding-top: 1px; padding-bottom: 1px">
-							<p align="center"><b><font color ="#FFF8D2"><br> Web Technology/Marketing
+							<p align="center"><b><font color ="#FFF8D2"><br> Web Technology
 				</font></b></p></div>
 				<div id="section" style="border-style: solid; border-width: 1px; padding-left: 1px; 
 				padding-right: 1px; padding-top: 1px; padding-bottom: 1px">
@@ -133,7 +133,7 @@ function googleTranslateElementInit() {
 <?php
 
 if($_SESSION["fg"]=="0"){
-	echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
+	echo '<meta http-equiv="refresh" content="0; url=http://www.cluster3.epizy.com/index.php">';
 }
 if(isset($_SESSION["lfgf"])=="You successful Update" || isset($_SESSION["lfgf"])=="Must be numbers")
 {
@@ -159,13 +159,13 @@ echo '<meta http-equiv="refresh" content="0; url=Manageusers.php">';
 
 if(!isset($_SESSION["fg"]))
 {
-	echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
+	echo '<meta http-equiv="refresh" content="0; url=http://www.cluster3.epizy.com/index.php">';
 }
 if(!isset($_SESSION["lg"])  &&  $_SESSION["fg"]=="1" || !isset($_SESSION["lj"])   &&  $_SESSION["fg"]=="1" || !isset($_SESSION["fg"])  &&  $_SESSION["fg"]=="1") //die('');
 {
 if(!isset($_SESSION["lfgf"]) || $as==2)
 {
-echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';}
+echo '<meta http-equiv="refresh" content="0; url=http://www.cluster3.epizy.com/index.php">';}
 elseif(isset($_SESSION["lfgf"])=="You successful Update")
 {
 
@@ -187,7 +187,7 @@ if(isset($_SESSION["lg"]) && isset($_SESSION["lj"]) && !isset($_SESSION["lfgf"])
 	{
 	session_unset();
 	session_destroy();
-	echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
+	echo '<meta http-equiv="refresh" content="0; url=http://www.cluster3.epizy.com/index.php">';
 	}
 		}
 	}
@@ -195,7 +195,7 @@ $as=1;
   usleep(5000000);
    session_unset();
  session_destroy();$as=2;usleep(5000000);
- echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
+ echo '<meta http-equiv="refresh" content="0; url=http://www.cluster3.epizy.com/index.php">';
  }
  }
 }
@@ -218,7 +218,7 @@ if(!isset($_SESSION["lgi"]) || $_SESSION["fg"]=="0") //die('');
 	{
 	session_unset();
 	session_destroy();
-	echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
+	echo '<meta http-equiv="refresh" content="0; url=http://www.cluster3.epizy.com/index.php">';
 	}
 		}
 	}
@@ -656,7 +656,7 @@ echo $_SESSION["lj"]. " <br> ";
 if(isset($_SESSION["lg"])) //die('');
 {
 echo
-'<form method="POST" action="http://www.faleristics4eforever.epizy.com/index.php">
+'<form method="POST" action="http://www.cluster3.epizy.com/index.php">
 <input type="submit" name="Sign_out" value="Sign out"></input>
 </form>'; 
 if(isset($_SESSION["lg"]) && isset($_SESSION["lj"])) //die('');
@@ -667,7 +667,7 @@ if(isset($_SESSION["lg"]) && isset($_SESSION["lj"])) //die('');
 	{
 	session_unset();
 	session_destroy();
-	echo '<meta http-equiv="refresh" content="0; url=http://www.faleristics4eforever.epizy.com/index.php">';
+	echo '<meta http-equiv="refresh" content="0; url=http://www.cluster3.epizy.com/index.php">';
 	}
 		}
 	}
@@ -700,5 +700,24 @@ if(isset($_SESSION["lg"])) //die('');
 	&nbsp;&nbsp;'; }?>
 						</div>
 			<br><br>
+<?php
+// Assuming session is already started
+$uri = md5($_SERVER['REQUEST_URI']);
+$exp = 3; // 3 seconds
+$hash = $uri .'|'. time();
+if (!isset($_SESSION['ddos'])) {
+    $_SESSION['ddos'] = $hash;
+}
+
+list($_uri, $_exp) = explode('|', $_SESSION['ddos']);
+if ($_uri == $uri && time() - $_exp < $exp) {
+    header('HTTP/1.1 503 Service Unavailable');
+    // die('Easy!');
+    die;
+}
+
+// Save last request
+$_SESSION['ddos'] = $hash;
+?>
 			</body>
 </html> 

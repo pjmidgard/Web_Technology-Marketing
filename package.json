@@ -1,0 +1,22 @@
+{
+  "name": "bow-and-arrow",
+  "version": "1.0.0",
+  "description": "Bow and Arrow Game",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbsamar/BowandArrow.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Nayab <nbsamar@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nbsamar/BowandArrow/issues"
+  },
+  "homepage": "https://github.com/nbsamar/BowandArrow#readme"
+}

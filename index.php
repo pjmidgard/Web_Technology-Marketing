@@ -11,7 +11,7 @@
 		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<title>Web Technology/Marketing </title>
+		<title>Web Technlology</title>
 <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
 <link rel="stylesheet" type="text/css" href="css/style.css">
   
@@ -73,7 +73,7 @@ $_SESSION["lghjas"]="click";}
 						<div id="header" style="border-style: solid; border-width: 1px; padding-left: 1px;
 						padding-right: 1px; padding-top: 1px; padding-bottom: 1px"><br>
 						
-	&nbsp;&nbsp; <marquee> Web Technology/Marketing  </marquee><br>
+	&nbsp;&nbsp; <marquee> Web Technology </marquee><br>
 	&nbsp;&nbsp; 
 						</div>
 <div id="horizontal_menu" style="border-style: solid; border-width: 1px; padding-left: 1px;
@@ -413,5 +413,24 @@ if(isset($_SESSION["lg"])) //die('');
 						</div>
 					
 			<br><br>
+<?php
+// Assuming session is already started
+$uri = md5($_SERVER['REQUEST_URI']);
+$exp = 3; // 3 seconds
+$hash = $uri .'|'. time();
+if (!isset($_SESSION['ddos'])) {
+    $_SESSION['ddos'] = $hash;
+}
+
+list($_uri, $_exp) = explode('|', $_SESSION['ddos']);
+if ($_uri == $uri && time() - $_exp < $exp) {
+    header('HTTP/1.1 503 Service Unavailable');
+    // die('Easy!');
+    die;
+}
+
+// Save last request
+$_SESSION['ddos'] = $hash;
+?>
 			</body>
 </html> 

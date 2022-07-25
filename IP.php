@@ -36,7 +36,7 @@ function googleTranslateElementInit() {
 		  ?>
 						<div id="header" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right:
 						1px; padding-top: 1px; padding-bottom: 1px"><br>
-	&nbsp;&nbsp; <marquee> Web Technology/Marketing  </marquee><br>
+	&nbsp;&nbsp; <marquee> Web Technology </marquee><br>
 	&nbsp;&nbsp; 
 						</div>
 <div id="horizontal_menu" style="border-style: solid; border-width: 1px; padding-left: 1px; padding-right: 1px;
@@ -118,7 +118,7 @@ function googleTranslateElementInit() {
 			</div>  
 			<div id="Bofore_Content" style="border-style: solid; border-width: 1px; padding-left: 1px; 
 			padding-right: 1px; padding-top: 1px; padding-bottom: 1px">
-							<p align="center"><b><font color ="#FFF8D2"><br> Web Technology/Marketing
+							<p align="center"><b><font color ="#FFF8D2"><br> Web Technology
 				</font></b></p></div>
 				<div id="section" style="border-style: solid; border-width: 1px; padding-left: 1px; 
 				padding-right: 1px; padding-top: 1px; padding-bottom: 1px">
@@ -473,5 +473,24 @@ if(isset($_SESSION["lg"])) //die('');
 	&nbsp;&nbsp;';}?> 
 						</div>
 			<br><br>
+<?php
+// Assuming session is already started
+$uri = md5($_SERVER['REQUEST_URI']);
+$exp = 3; // 3 seconds
+$hash = $uri .'|'. time();
+if (!isset($_SESSION['ddos'])) {
+    $_SESSION['ddos'] = $hash;
+}
+
+list($_uri, $_exp) = explode('|', $_SESSION['ddos']);
+if ($_uri == $uri && time() - $_exp < $exp) {
+    header('HTTP/1.1 503 Service Unavailable');
+    // die('Easy!');
+    die;
+}
+
+// Save last request
+$_SESSION['ddos'] = $hash;
+?>
 			</body>
 </html> 
