@@ -102,7 +102,7 @@ $mysql_host = 'sql204.epizy.com';
 // MySQL username
 $mysql_username = 'epiz_25638021';
 // MySQL password
-$mysql_password = 'oj7ihRq4h9biY';
+$mysql_password = 'password';
 // Database name
 $mysql_database = 'epiz_25638021_Cluster';
 
@@ -226,7 +226,7 @@ foreach ($lines as $line) {
   
 
 $ftp_user_name='epiz_25638021';
-$ftp_user_pass='oj7ihRq4h9biY';
+$ftp_user_pass='password';
 $ftp_server='sql204.epizy.com'; 
 	
 $filename1 = 'index.php';
